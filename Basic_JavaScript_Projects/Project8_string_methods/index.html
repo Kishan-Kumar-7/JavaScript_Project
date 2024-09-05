@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="concat">
+            <h4 class="concatinate">Here we are goin to concatinate string...</h4>
+            <input type="text" id="Part01" placeholder="Please Type Part one...">
+            <input type="text" id="Part02" placeholder="Please Type Part two...">
+            <input type="text" id="Part03" placeholder="Please Type Part three...">
+            <input type="text" id="Part04" placeholder="Please Type Part four...">
+            <input type="submit" onclick="myConca();">
+            <h4 id="sentance">This is Going to Replace by Your Sentance.</h4>
+        </div>
+
+        <div class="slice">
+            <input type="text"
+                placeholder="Please Enter Your Sentance Here and We will Slice it after 10th Letter to 20th Letter."
+                value="" id="texxt">
+            <button onclick="mySlice();">Slice it Up!</button>
+            <h4 id="textres">Here you get your sliced sentance.</h4>
+        </div>
+
+        <div class="upper">
+            <input type="text" id="upperCase" placeholder="Please Enter Word You Want to Capitalized">
+            <input type="submit" value="Capitalized" onclick="UpperCase();">
+            <h4 id="capres">Here You Get Your Word Capitalized.</h4>
+        </div>
+
+        <div class="search">
+            <h4 id="serc">Please type any word from this sentance to know its position.</h4>
+            <input type="text" id="findt">
+            <input type="submit" value="Search" onclick="mySearch();">
+            <h4 id="posi">Here You wil Get Position Of First Letter of the Word.</h4>
+        </div>
+
+        <div class="num2str">
+            <input type="number" placeholder="Please Select Number you want to see as string" id="numb">
+            <button onclick="num2str();">Number to String</button>
+            <h4 id="numb2str">Here I am going to Concatinate number 10 with your entered number.</h4>
+        </div>
+
+        <div class="precision">
+            <h4>The Variable here is made with precision so you enter any number it will turn that number in to 10
+                degits.</h4>
+            <input type="text" id="prenum" value="">
+            <button onclick="myPreci();">Click me</button>
+            <h4 id="preres"></h4>
+        </div>
+
+        <div class="tofix">
+            <h4>Please enter any number you will get it back as string with 3 number after decimal</h4>
+            <input type="text" id="fixi">
+            <button onclick="myFix();">Fix It!</button>
+            <h4 id="fixres"></h4>
+        </div>
+
+        <div class="valu">
+            <h4>ValueOf mathod returns primitive value of string</h4>
+            <input type="text" id="val">
+            <button onclick="myValu();">Value Of</button>
+            <h4 id="valres"></h4>
+        </div>
+    </div>
+
+</body>
+
+</html>
