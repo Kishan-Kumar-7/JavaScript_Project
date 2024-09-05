@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope_time_function</title>
+    <script src="./script/main.js"></script>
+</head>
+
+<body>
+    <div class="global">
+        <p id="glcount">0</p>
+        <button onclick="gCount();">Global Scope</button>
+    </div>
+
+    <div class="local">
+        <p id="locount">0</p>
+        <button onclick="lCount();">Local Scope</button>
+    </div>
+
+    <p>open Console log for more details.</p>
+
+    <h1>get time dynamically and greet</h1>
+    <button onclick="timeGreet();">Time Greet</button>
+    <h2 id="greet"></h2>
+
+    <div class="age">
+        <h1>Voting Age Validator</h1>
+        <input type="number" placeholder="Please Enter your age" id="valiage" value="">
+        <button onclick="voteage();">Calculate</button>
+        <h2 id="ageres"></h2>
+    </div>
+
+    
+</body>
+
+</html>
