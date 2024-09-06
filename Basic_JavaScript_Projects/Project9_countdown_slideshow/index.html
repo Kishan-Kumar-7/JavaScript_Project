@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Slideshow</title>
+    <script src="./script/main.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!--Slideshow Container-->
+        <div class="slideshow">
+            <!--Full Width Images With Numbers and Caption-->
+
+            <!--Slide Number 1-->
+            <div class="mySlides fade">
+                <div class="numbertext">1/6</div>
+                <img src="./images/Ashokachakra.jpg" alt="Ashokachakra" width="100%">
+                <div class="text">Ashoka Chakra</div>
+            </div>
+            <!--End Of Slide Number 1-->
+
+            <!--Slide number 2-->
+            <div class="mySlides fade">
+                <div class="numbertext">2/6</div>
+                <img src="./images/Himalaya.jpg" alt="Himalaya" width="100%">
+                <div class="text">Himalaya Mountain</div>
+            </div>
+            <!--End Of Slide number 2-->
+
+            <!--Slide number 3-->
+            <div class="mySlides fade">
+                <div class="numbertext">3/6</div>
+                <img src="./images/Howrah.jpg" alt="Howrah" width="100%">
+                <div class="text">West Bengal</div>
+            </div>
+            <!--End Of Slide number 3-->
+
+            <!--Slide number 4-->
+            <div class="mySlides fade">
+                <div class="numbertext">4/6</div>
+                <img src="./images/kerala.jpg" alt="Kerala" width="100%">
+                <div class="text">Kerala</div>
+            </div>
+            <!--End Of Slide number 4-->
+
+            <!--Slide number 5-->
+            <div class="mySlides fade">
+                <div class="numbertext">5/6</div>
+                <img src="./images/kodaikanal.jpg" alt="Kodai Kanal" width="100%">
+                <div class="text">Kodai Kanal</div>
+            </div>
+            <!--End Of Slide number 5-->
+
+            <!--Slide number 6-->
+            <div class="mySlides fade">
+                <div class="numbertext">6/6</div>
+                <img src="./images/Mumbai.jpg" alt="Mumbai" width="100%">
+                <div class="text">Mumbai</div>
+            </div>
+            <!--End Of Slide number 6-->
+
+            <!--Next Previous Buttons-->
+            <a class="prev" onclick="plusSlides(-1);">&#10094;</a>
+            <a class="next" onclick="plusSlides(1);">&#10095;</a>
+            <!--End Of Next Previous Buttons-->
+
+        </div>
+        <br>
+        <!--Page Jump Buttons-->
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1);"></span>
+            <span class="dot" onclick="currentSlide(2);"></span>
+            <span class="dot" onclick="currentSlide(3);"></span>
+            <span class="dot" onclick="currentSlide(4);"></span>
+            <span class="dot" onclick="currentSlide(5);"></span>
+            <span class="dot" onclick="currentSlide(6);"></span>
+        </div>
+        <!--End Of Page Jump Buttons-->
+
+        <!--End Of Slideshow Container-->
+        <div class="timer">
+            <p>How many seconds would you like to set your alarm for?</p>
+            <input value="" id="seconds">
+            <button class="btn" onclick="countdown();">Click Here!</button>
+            <H4 id="timer">0</H4>
+        </div>
+    </div>
+</body>
+
+</html>
