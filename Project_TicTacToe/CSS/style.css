@@ -1,0 +1,50 @@
+/*This container include out table and out canvas.*/
+.center-container{
+    /*This property sets the width of our container*/
+    width: 608px;
+    /*This property Horizontaly Center our container and add 50px on top*/
+    margin: 50px auto 0px auto;
+}
+
+/*This is our heading Styling*/
+h1{
+    /*This will adjust text size as per screen*/
+    font-size: 3em;
+    /*This will center our text in to window*/
+    text-align: center;
+    /*This will add shadow to our Heading*/
+    text-shadow: 5px 5px 10px rgba(0,0,150,0.8);
+}
+
+
+/*Styleing Table*/
+table{
+
+    /*This will collaps border in one border*/
+    border-collapse: collapse;
+    /*this will hide outer border*/
+    border-style: hidden;
+}
+
+td{
+    /*This property changes the cursor to the index finger hand when we hover over td element*/
+    cursor: pointer;
+    /*table border style*/
+    border: 4px solid #FFA700;
+    /*this property remove default padding*/
+    padding: 0px;
+    /*this will sets width for on element*/
+    width: 200px;
+    /*this will sets Height for on element*/
+    height: 200px;
+    filter: contrast(3);
+}
+
+canvas{
+    /*This property sets the position of our canvas to the top left conrer of out container*/
+    position: absolute;
+    /*This property places our canvas over the top of our table.*/
+    z-index: 10;
+    /*This Property makes our canvas invisible*/
+    pointer-events: none;
+}
