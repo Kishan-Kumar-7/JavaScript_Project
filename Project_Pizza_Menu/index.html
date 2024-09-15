@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaMa Mia Pizzeria</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./script/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ewert&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#menuBG">Menu</a>
+            <a href="#cart">Cart</a>
+            <a href="#contactus">Contact US</a>
+        </nav>
+        <br><br>
+
+        <div id="home">
+            <video autoplay muted loop id="Title-video">
+                <source src="./media/Title.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-text">
+            <h1 id="title-name">MaMa Mia Pizzeria</h1>
+            <h3 id="heading">Authentic Wood-Fired Pizza</h3>
+            <p id="text-overlay">We use a traditional wood-fired pizza oven to achieve the flavor's that only a
+                woodfire
+                oven can achieve...the result? The perfect crust, a slightly smoky aroma and crispier toppings that
+                taste
+                incredible. It's the authentic Italian way!</p>
+        </div>
+        <div class="menu" id="menuBG">
+            <form id="frmMenu">
+                <div class="row">
+                    <!-- Pizza Size Section -->
+                    <div class="menu left">
+                        <h3>Size:</h3>
+                        <input type="radio" class="size" name="Size" value="Personal Pizza">Personal Pizza..................&euro;8.00<br>
+                        <input type="radio" class="size" name="Size" value="Small Pizza">Small Pizza........................&euro;6.00<br>
+                        <input type="radio" class="size" name="Size" value="Medium Pizza">Medium Pizza...................&euro;10.00<br>
+                        <input type="radio" class="size" name="Size" value="Large Pizza">Large Pizza........................&euro;12.00<br>
+                        <input type="radio" class="size" name="Size" value="Extra Large Pizza">Extra Large Pizza............&euro;18.00<br>
+                    </div>
+                    <!-- Pizza Crust Section -->
+                    <div class="menu right">
+                        <h3>Crust:</h3>
+                        <input type="radio" name="Crust" class="crust" value="Regular">Regular <br>
+                        <input type="radio" name="Crust" class="crust" value="Garlic Butter">Garlic Butter....................................&euro;2.75<br>
+                        <input type="radio" name="Crust" class="crust" value="Spicy">Spicy...................................................&euro;2.75<br>
+                        <input type="radio" name="Crust" class="crust" value="House Special">House Special <small>Mince
+                            Veggie
+                        </small>.........&euro;4.00<br>
+                        <input type="radio" name="Crust" class="crust" value="Cheese Stuffed">Cheese Stuffed...............................&euro;4.75<br>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Pizza Sauce Section -->
+                    <div class="menu left">
+                        <h3>Sauce:</h3>
+                        <input type="radio" name="Sause" class="sauce" value="Marinara Sauce">Marinara Sauce <br>
+                        <input type="radio" name="Sause" class="sauce" value="Garlic Butter Sauce">Garlic Butter Sauce
+                        <br>
+                        <input type="radio" name="Sause" class="sauce" value="White Sauce">White Sauce <br>
+                        <input type="radio" name="Sause" class="sauce" value="Barbeque Sauce">Barbeque Sauce <br>
+                        <input type="radio" name="Sause" class="sauce" value="Flaming Hot Sauce">Flaming Hot Sauce <br>
+                    </div>
+
+                    <!-- Pizza Cheese Section -->
+                    <div class="menu right">
+                        <h3>Cheese</h3>
+                        <input type="checkbox" name="Cheese" class="cheese" value="Parmesan Cheese">Parmesan Cheese..................&euro;2.75<br>
+                        <input type="checkbox" name="Cheese" class="cheese" value="Mozzarella Cheese">Mozzarella Cheese................&euro;3.00<br>
+                        <input type="checkbox" name="Cheese" class="cheese" value="Goat Cottege Cheese">Goat Cottege
+                        Cheese............&euro;4.75 <br>
+                        <input type="checkbox" name="Cheese" class="cheese" value="Extra Cheese">Extra Cheese............................&euro;3.50<br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Pizza Veggie Section -->
+                    <div class="menu left long">
+                        <h3>Veggie</h3>
+                        <input type="checkbox" name="Veggie" class="veggie" value="Tomatoes">Tomatoes<br>
+                        <input type="checkbox" name="Veggie" class="veggie" value="Onions">Onions<br>
+                        <input type="checkbox" name="Veggie" class="veggie" value="Olives">Olives<br>
+                        <input type="checkbox" name="Veggie" class="veggie" value="Green Peppers">Green Peppers<br>
+                        <input type="checkbox" name="Veggie" class="veggie" value="Mushrooms">Mushrooms<br>
+                        <input type="checkbox" name="Veggie" class="veggie" value="Pineapple">Pineapple<br>
+                        <input type="checkbox" name="Veggie" class="veggie" value="Spinich">Spinich<br>
+                        <input type="checkbox" name="Veggie" class="veggie" value="Jalapenos">Jalapeños<br><br>
+
+                        <p>NOTE:First Veggie topping is Coplimentary. +&euro;1.00/Topping for additional Toppings. </p>
+                    </div>
+
+                    <!-- Pizza Meat Section -->
+                    <div class="menu right long">
+                        <h3>Meats:</h3>
+                        <input type="checkbox" class="toppings" name="Topping" value="Pepperoni">Pepperoni <br>
+                        <input type="checkbox" class="toppings" name="Topping" value="Sausage">Sausage <br>
+                        <input type="checkbox" class="toppings" name="Topping" value="Canadian Bacon">Canadian Bacon
+                        <br>
+                        <input type="checkbox" class="toppings" name="Topping" value="Ground Beef">Ground Beef <br>
+                        <input type="checkbox" class="toppings" name="Topping" value="Anchovy">Anchovy <br>
+                        <input type="checkbox" class="toppings" name="Topping" value="Chicken">Chicken <br>
+                        <input type="checkbox" class="toppings" name="Topping" value="Mutton Tikka">Mutton Tikka
+                        <br><br>
+
+                        <p>NOTE:First Veggie topping is Coplimentary. +&euro;1.00/Topping for additional Toppings. </p>
+                    </div>
+                </div>
+            </form>
+            <div id="cart">
+                <div id="showText"></div>
+                <div id="totalPrice"></div>
+                <input type="button" id="btnOrder" onclick="getReceipt();" value="Place Order">
+                <input type="button" id="reOrder" onclick="ResetOrder();" value="Cancel Order">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

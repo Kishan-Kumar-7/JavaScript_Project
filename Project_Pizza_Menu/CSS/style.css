@@ -1,0 +1,131 @@
+/* General Styling*/
+html,
+body {
+  margin: 0%;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #f5f8fc;
+  color: #172862;
+  display: inline;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+/*NavBar Styling*/
+.nav {
+  margin: 0;
+  overflow: hidden;
+  background-color: #70b4aa;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: #172862;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family: "Exo 2", "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+}
+
+.nav a:hover {
+  background-color: #d9275c;
+  color: #f5f8fc;
+  font-weight: 900;
+}
+
+#Title-video {
+  width: 100%;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  min-width: 100%;
+  z-index: -1;
+}
+#home {
+  margin: auto;
+  width: 100%;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.video-text {
+  color: #f5f8fc;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 200px;
+  text-align: center;
+  align-items: center;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#title-name {
+  font-family: "Ewert", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3em;
+}
+#title-name:hover,
+#heading:hover {
+  transition: transform 1.5s;
+  transform: scale(1.1);
+}
+
+#heading {
+  font-family: "Jacques Francois Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+}
+#text-overlay:hover {
+  transition: transform 1s;
+  transform: scale(1.05);
+}
+
+.menu {
+  display: inline-block;
+  background-color: #f5f8fc;
+  border: #172862 2px solid;
+}
+
+.row {
+  margin: 50px;
+  width: 100%;
+}
+
+.left,
+.right {
+  margin: auto 100px;
+  border-radius: 10px;
+  width: 30%;
+  padding: 20px;
+  height: 150px;
+  background: #f5f8fc;
+}
+
+.long {
+  height: 300px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
