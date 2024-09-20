@@ -1,17 +1,16 @@
 /* General Styling*/
-html,
 body {
   margin: 0%;
   padding: 0px;
   box-sizing: border-box;
   background-color: #f5f8fc;
   color: #172862;
-  display: inline;
   font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
+
 /*NavBar Styling*/
 .nav {
   margin: 0;
@@ -45,8 +44,8 @@ body {
 #Title-video {
   width: 100%;
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  top: 55px;
+  left: 0px;
   min-width: 100%;
   z-index: -1;
 }
@@ -64,14 +63,12 @@ body {
 .video-text {
   color: #f5f8fc;
   width: 80%;
-  margin: auto;
-  margin-bottom: 200px;
+  margin: 250px;
+  margin-bottom: 300px;
   text-align: center;
-  align-items: center;
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
-  text-align: center;
   font-size: 1.5em;
   cursor: pointer;
 }
@@ -98,27 +95,36 @@ body {
   transition: transform 1s;
   transform: scale(1.05);
 }
+.video-text::after{
+  content: "";
+  clear: both;
+  display: none;
+  box-sizing: border-box;
+}
 
-.menu {
-  display: inline-block;
+#frmMenu{
+  margin: auto;
+  width: 100%;
   background-color: #f5f8fc;
-  border: #172862 2px solid;
+  align-items: center;
 }
 
 .row {
-  margin: 50px;
   width: 100%;
+  display: inline;
 }
 
-.left,
-.right {
-  margin: auto 100px;
+.menu{
+  margin: 50px auto auto 250px;
+  display: inline-block;
+  width: 20%;
+  border: #172862 2px solid;
   border-radius: 10px;
-  width: 30%;
-  padding: 20px;
+  padding: 50px;
   height: 150px;
   background: #f5f8fc;
 }
+
 
 .long {
   height: 300px;
@@ -126,6 +132,46 @@ body {
 
 .row::after {
   content: "";
-  display: table;
+  display: none;
   clear: both;
+}
+
+#cart{
+  box-sizing: border-box;
+  margin: 20px auto;
+  overflow: hidden;
+  background-color: #70b4aa;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#cart{
+  color: #172862;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family: "Exo 2", "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+}
+
+#cart input{
+  font-family: "EXO 2", 'Times New Roman', Times, serif;
+  font-weight: 600;
+  margin: 20px 30px;
+  font-size: 20px;
+  padding: 10px 30px;
+  border: none;
+  background-color: #172862;
+  color: #d9275c;
+  border-radius: 10px;
+}
+
+#cart input:hover{
+  background-color: #d9275c;
+  color: #f5f8fc;
+  font-weight: 900;
 }
