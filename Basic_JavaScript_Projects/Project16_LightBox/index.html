@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./script/main.js" defer></script>
+    <title>lightbox</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <div class="row">
+                <div class="column">
+                    <img src="./image/thumb/img1.jpg" alt="flower1" class="hover-shadow" onclick="openModal();currentSlide(1);">
+                </div>
+                <div class="column">
+                    <img src="./image/thumb/img2.jpg" alt="flower2" class="hover-shadow" onclick="openModal();currentSlide(2);">
+                </div>
+                <div class="column">
+                    <img src="./image/thumb/img3.jpg" alt="flower3" class="hover-shadow" onclick="openModal();currentSlide(3);">
+                </div>
+                <div class="column">
+                    <img src="./image/thumb/img4.jpg" alt="flower4" class="hover-shadow" onclick="openModal();currentSlide(4);">
+                </div>
+            </div>
+
+            <!-- The Lightbox -->
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal();">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numberText">1/4</div>
+                        <img src="./image/img1.jpg" alt="flower1" style="width: 100%;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numberText">2/4</div>
+                        <img src="./image/img2.jpg" alt="flower2" style="width: 100%;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numberText">3/4</div>
+                        <img src="./image/img3.jpg" alt="flower3" style="width: 100%;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numberText">4/4</div>
+                        <img src="./image/im4.jpg" alt="flower4" style="width: 100%;">
+                    </div>
+
+                    <!-- Next/Previous Controls -->
+                     <a onclick="plusSlides(-1);" class="prev">&#10094;</a>
+                     <a onclick="plusSlides(1);" class="next">&#10095;</a>
+
+                     <!-- Caption Text -->
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+
+                      <!-- Thumbnail Image Controls -->
+                       <div class="column">
+                        <img src="./image/thumb/img1.jpg" alt="flower1" class="demo" onclick="currentSlide(1)">
+                       </div>
+
+                    <div class="column">
+                        <img src="./image/thumb/img2.jpg" alt="flower2" class="demo" onclick="currentSlide(2)">
+                    </div>
+
+                    <div class="column">
+                        <img src="./image/thumb/img3.jpg" alt="flower3" class="demo" onclick="currentSlide(3)">
+                    </div>
+
+                    <div class="column">
+                        <img src="./image/thumb/img4.jpg" alt="flower4" class="demo" onclick="currentSlide(4)">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

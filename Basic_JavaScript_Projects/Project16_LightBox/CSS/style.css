@@ -1,0 +1,119 @@
+.row> .column{
+    padding: 0 10px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create four equal columns that floats next to eachother*/
+.column{
+    float: left;
+    width: 25%;
+}
+
+/* The Modal (Background)*/
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #060606;
+}
+
+/*Modal Content*/
+.modal-content{
+    position: relative;
+    background-color: #FEFEFE;
+    margin: auto;
+    padding: 0px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Close Button*/
+.close{
+    color: #FEFEFE;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus{
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Hide the slides by default*/
+.mySlides{ display: none;}
+
+/*Next & Previous Buttons*/
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 1s ease;
+    border-radius: 0 5px 5px 0  ;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the next button to right*/
+.next{
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+/*On hover, add a black background color with little bit see through*/
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*Number text (1/4 etc)*/
+.numberText{
+    color: #FEFEFE;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0px;
+}
+
+/*Caption Text*/
+.caption-container{
+    text-align: center;
+    background-color: #000;
+    padding: 2px 16px;
+    color: #FFF;
+}
+
+img.demo{
+    opacity: 0.6;
+}
+
+.active, .demo:hover{
+    opacity: 1;
+}
+
+img.hover-shadow{
+    transition: 0.5s;
+}
+
+.hover-shadow:hover{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
