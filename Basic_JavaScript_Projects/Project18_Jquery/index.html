@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>jQueary</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $("body").append(
+            "<div id='container'>\
+                    <div id='inner'>\
+                        <h1>Basic jQueary</h1>\
+                        <p id='1'>Paragraph 1</p>\
+                        <p id='2'>Paragraph 2</p>\
+                        <p id='3'>Paragraph 3</p>\
+                    </div>\
+                </div>"
+
+        );
+        $("#1").css({ "color": "Red" });
+        $("#2").click(function () { $("h1").hide() });
+        $("#3").click(function () { $("h1").show() });
+    });
+</script>
+
+</html>
