@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML</title>
+</head>
+<body>
+    <p id="XML_Example"></p>
+    <script>
+        var XML_Parser, XML_Document;
+
+        //creates a text string
+        var Movie = "<movie>" + "<title>Schindler\'s List </title>" + "<director>Steven Spielberg </director>" + "<starring>Liam Neeson </starring>" + "<year>1993 </year>" + "</movie>";
+
+        //creates and XML DOM parser
+        XML_Parser = new DOMParser();
+        console.log(XML_Parser);
+
+        //Creates a new XML DOM Object using the text string
+        XML_Document = XML_Parser.parseFromString(Movie,"text/xml");
+        console.log(XML_Document);
+
+        document.getElementById('XML_Example').innerHTML = XML_Document.getElementsByTagName('title')[0].childNodes[0].nodeValue;
+        
+    </script>
+</body>
+</html>

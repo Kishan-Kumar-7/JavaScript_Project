@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="like_button_container"></div>
+    <script>
+
+     const X = React.createElement;
+
+     class likeButton extends React.Component{
+        constructor(props){
+            super(props);
+            this.state = {liked: false};
+        }
+        render(){
+            if (this.state.liked){
+                return 'You Clicked the Like Button!';
+            }
+
+            return X(
+                'button', {onClick: ()=> this.setState({ liked: true})},'Click Here to Like'
+            );
+        }
+     }
+
+     const domContainer = document.querySelector('#like_button_container');
+     ReactDOM.render(X(likeButton),domContainer);
+    </script>
+</body>
+
+</html>
