@@ -4,37 +4,52 @@
 <head>
     <meta charset="UTF-8" />
     <title>Hello World</title>
+    <!-- Importing React and ReactDOM libraries -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-    <!-- Don't use this in production: -->
     <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 
 <body>
+    <!-- Container for the Like button -->
     <div id="like_button_container"></div>
+
     <script>
+        // Create a shorthand for React.createElement
+        const X = React.createElement;
 
-     const X = React.createElement;
-
-     class likeButton extends React.Component{
-        constructor(props){
-            super(props);
-            this.state = {liked: false};
-        }
-        render(){
-            if (this.state.liked){
-                return 'You Clicked the Like Button!';
+        // Define the LikeButton component
+        class LikeButton extends React.Component {
+            constructor(props) {
+                super(props);
+                // Initialize state to track if the button has been liked
+                this.state = { liked: false };
             }
 
-            return X(
-                'button', {onClick: ()=> this.setState({ liked: true})},'Click Here to Like'
-            );
-        }
-     }
+            // Render method to define the UI
+            render() {
+                // Check if the button has been clicked
+                if (this.state.liked) {
+                    return 'You Clicked the Like Button!';
+                }
 
-     const domContainer = document.querySelector('#like_button_container');
-     ReactDOM.render(X(likeButton),domContainer);
+                // Return a button that updates the state when clicked
+                return React.createElement(
+                    'button',
+                    { onClick: () => this.setState({ liked: true }) }, // Set state to liked
+                    'Click Here to Like' // Button text
+                );
+            }
+        }
+
+        // Select the container to render the LikeButton
+        const domContainer = document.querySelector('#like_button_container');
+
+        // Create a root for the React application
+        const root = ReactDOM.createRoot(domContainer);
+
+        // Render the LikeButton component
+        root.render(React.createElement(LikeButton));
     </script>
 </body>
 
