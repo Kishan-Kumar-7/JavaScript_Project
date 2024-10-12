@@ -53,8 +53,14 @@ li {
   margin: 0;
 }
 
-hr{
-    margin: 30px;
-    height: 5px;
-    background-color: #156DC0;
+hr {
+  margin: 30px;
+  height: 5px;
+  background-color: #156dc0;
+}
+
+.remove {
+  margin: 0;
+  padding: 5px 10px;
+  padding-bottom: 5px;
 }
