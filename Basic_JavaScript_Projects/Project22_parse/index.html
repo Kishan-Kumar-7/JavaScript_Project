@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parse</title>
+</head>
+
+<body>
+    <p id="myDog"></p>
+
+    <script>
+        var dog = '{ "name": "Dax", "breed": "Great Pyrenees", "color": "White" }';
+
+        var JSONstring = JSON.parse(dog);
+        document.getElementById("myDog").innerHTML = JSONstring.name+' the '+JSONstring.breed;
+    </script>
+</body>
+
+</html>
